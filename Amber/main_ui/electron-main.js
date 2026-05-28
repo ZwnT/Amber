@@ -1,6 +1,6 @@
 const { app, BrowserWindow, Menu, ipcMain } = require('electron');
 const path = require('path');
-const { spawn } = require('child_process');
+const { spawn, exec } = require('child_process');
 
 let mainWindow;
 let pythonProcess = null;
@@ -26,6 +26,11 @@ function startBackend() {
       stdio: 'inherit'
     });
   }
+
+  // 监听进程退出，防止意外闪崩
+  pythonProcess.on('exit', (code) => {
+    console.log(`[Electron] Backend process exited with code ${code}`);
+  });
 }
 
 function createWindow() {
@@ -71,21 +76,34 @@ app.whenReady().then(() => {
   startBackend();
   createWindow();
 });
-
-// 生命周期彻底死锁：关闭窗口时刚性杀死 Python 后端进程
-app.on('window-all-closed', function () {
-  if (process.platform !== 'darwin') {
-    if (pythonProcess) {
-      console.log('[Electron] Killing backend process...');
+  
+  // 生命周期彻底死锁：关闭窗口时刚性杀死 Python 后端进程
+function killBackend() {
+  if (pythonProcess) {
+    console.log('[Electron] Killing backend process...');
+    if (process.platform === 'win32') {
+      // Windows 平台下，spawn 使用 shell: true 会产生进程树，需要用 taskkill 刚性物理切除
+      exec(`taskkill /pid ${pythonProcess.pid} /T /F`, (err) => {
+        if (err) {
+          console.error('[Electron] Failed to kill backend via taskkill:', err);
+          // 兜底：如果 taskkill 失败，尝试按名称强制切除
+          exec('taskkill /f /t /im amber_core.exe');
+        }
+      });
+    } else {
       pythonProcess.kill();
     }
+    pythonProcess = null;
+  }
+}
+
+app.on('window-all-closed', function () {
+  if (process.platform !== 'darwin') {
+    killBackend();
     app.quit();
   }
 });
 
 app.on('before-quit', () => {
-  if (pythonProcess) {
-    console.log('[Electron] Final check: Killing backend process...');
-    pythonProcess.kill();
-  }
+  killBackend();
 });

@@ -81,6 +81,13 @@ In the future, everyone can have the long-term companionship of an independent A
 
 ## 🚀 Quick Start
 
+### 📦 Production (Releases)
+For general users, it is recommended to download the compressed package from **Releases**, unzip and use it directly:
+> [!IMPORTANT]
+> **Notes for Use:**
+> 1. **Path Limitation**: Do NOT extract the program to a physical path containing **Chinese characters** (this may cause the backend engine to fail to start).
+> 2. **First Launch**: After opening the program for the first time, please be sure to **completely close it once and then reopen it** to complete database initialization and automatic environment calibration.
+
 ### 1. Backend Engine (Amber Engine)
 
 ```bash
