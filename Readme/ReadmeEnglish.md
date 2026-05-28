@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Amber - Digital Life Simulation</h1>
 <p align="center">
-  <code>v0.1.1-beta</code> • <code>Dual-System Cognitive Engine</code> • <code>Designed by 3312</code>
+  <code>v0.1.1-beta</code> • <code>Dual-System Cognitive Engine</code>
 </p>
 
 <p align="center">
@@ -128,8 +128,23 @@ The birth of "Amber" is inseparable from the nourishment of the open-source comm
 - **https://github.com/LC044/WeChatMsg** - Thanks for the heart-shaking foreword and the textbook-level open-source documentation layout inspiration.
 
 ### ⚙️ Core Contributors
-<a href="https://github.com/GANLI312"><img src="https://github.com/GANLI312.png" width="50px" style="border-radius:50%;" title="GANLI312"/></a> &nbsp;&nbsp;
-<a href="https://github.com/ecokater"><img src="https://github.com/ecokater.png" width="50px" style="border-radius:50%;" title="eco (ecokater)"/></a>
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/GANLI312">
+        <img src="https://github.com/GANLI312.png" width="100px;" alt="GANLI312"/><br />
+        <sub><b>GANLI312</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ecokater">
+        <img src="https://github.com/ecokater.png" width="100px;" alt="eco (ecokater)"/><br />
+        <sub><b>eco (ecokater)</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 *(Click on the avatar to go directly to the partner's GitHub home page)*
 

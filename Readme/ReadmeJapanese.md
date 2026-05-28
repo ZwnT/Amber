@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">琥珀 (Amber) - デジタル生命シミュレーション</h1>
 <p align="center">
-  <code>v0.1.1-beta</code> • <code>Dual-System Cognitive Engine</code> • <code>Designed by 3312</code>
+  <code>v0.1.1-beta</code> • <code>Dual-System Cognitive Engine</code>
 </p>
 
 <p align="center">
