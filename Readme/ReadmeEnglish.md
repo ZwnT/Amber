@@ -27,6 +27,17 @@ In the future, everyone can have the long-term companionship of an independent A
 
 '*Those daily conversations that flow like resin and are fleeting, after being wrapped in "emotional intensity" and pressured by the "forgetting mechanism", eventually condense into an eternal existence across time and space in the depths of the formation.*'"
 
+## 📝 Project Overview
+
+**Amber** is a digital life experimental system focused on **emotional companionship and personality simulation**.
+
+Unlike traditional general-purpose chatbots, Amber aims to physically simulate human cognitive patterns, transforming cold language models into independent personas with "personality stability" and "long-term memory." It is not just a chat window, but a digital life carrier running in the background with its own metabolic mechanisms.
+
+The project addresses anthropomorphic experiences across three core dimensions:
+1. **The "Skeleton" of Personality**: Through a three-axis personality matrix, ensuring the persona maintains consistent behavioral logic in any conversation, rather than random AI replies.
+2. **The "Precipitation" of Memory**: Simulating the human sleep mechanism, daily trivial conversations are automatically "dehydrated and distilled" into long-term memory imprints, achieving a true "the more we chat, the more I understand you" experience.
+3. **The "Entity" of Survival**: Breaking sandbox limitations, through external relays (such as QQ bots), allowing the persona to spontaneously "cross boundaries" into the user's real life, achieving proactive check-ins and reverse care.
+
 ## 🖼️ Project Screenshots
 
 <p align="center">
