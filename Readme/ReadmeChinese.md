@@ -9,7 +9,8 @@
 <p align="center">
   <a href="ReadmeChinese.md">简体中文</a> | 
   <a href="ReadmeEnglish.md">English</a> | 
-  <a href="ReadmeJapanese.md">日本語</a> | 
+  <a href="ReadmeJapanese.md">日本語</a>
+  <br>
   <a href="QUICK_START.md">快速开始 (Quick Start)</a> | 
   <a href="BACKEND_GUIDE.md">后端指南 (Backend)</a> | 
   <a href="FRONTEND_GUIDE.md">前端指南 (Frontend)</a> | 
@@ -127,8 +128,23 @@ npm run dev
 - **https://github.com/LC044/WeChatMsg** - 感谢其震撼心灵的前言与教科书级的开源文档排版启迪。
 
 ### ⚙️ 核心筑路人
-<a href="https://github.com/GANLI312"><img src="https://github.com/GANLI312.png" width="50px" style="border-radius:50%;" title="GANLI312"/></a> &nbsp;&nbsp;
-<a href="https://github.com/ecokater"><img src="https://github.com/ecokater.png" width="50px" style="border-radius:50%;" title="eco (ecokater)"/></a>
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/GANLI312">
+        <img src="https://github.com/GANLI312.png" width="100px;" alt="GANLI312"/><br />
+        <sub><b>GANLI312</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ecokater">
+        <img src="https://github.com/ecokater.png" width="100px;" alt="eco (ecokater)"/><br />
+        <sub><b>eco (ecokater)</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 *（点击头像可直达伙伴的 GitHub 主页）*
 

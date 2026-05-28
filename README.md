@@ -130,8 +130,22 @@ npm run dev
 
 ### ⚙️ 核心筑路人
 
-<a href="https://github.com/GANLI312"><img src="https://github.com/GANLI312.png" width="50px" style="border-radius:50%;" title="GANLI312"/></a> &nbsp;&nbsp;
-<a href="https://github.com/ecokater"><img src="https://github.com/ecokater.png" width="50px" style="border-radius:50%;" title="eco (ecokater)"/></a>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/GANLI312">
+        <img src="https://github.com/GANLI312.png" width="100px;" alt="GANLI312"/><br />
+        <sub><b>GANLI312</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ecokater">
+        <img src="https://github.com/ecokater.png" width="100px;" alt="eco (ecokater)"/><br />
+        <sub><b>eco (ecokater)</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 
 > "如果你也想为《琥珀》注入新的灵魂，让陪伴永存，欢迎提交 Pull Request 或 Issue！"

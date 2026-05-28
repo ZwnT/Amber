@@ -128,8 +128,23 @@ npm run dev
 - **https://github.com/LC044/WeChatMsg** - 心を揺さぶる前書きと教科書レベルのオープンソースドキュメントのレイアウトインスピレーションに感謝します。
 
 ### ⚙️ コアコントリビューター
-<a href="https://github.com/GANLI312"><img src="https://github.com/GANLI312.png" width="50px" style="border-radius:50%;" title="GANLI312"/></a> &nbsp;&nbsp;
-<a href="https://github.com/ecokater"><img src="https://github.com/ecokater.png" width="50px" style="border-radius:50%;" title="eco (ecokater)"/></a>
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/GANLI312">
+        <img src="https://github.com/GANLI312.png" width="100px;" alt="GANLI312"/><br />
+        <sub><b>GANLI312</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ecokater">
+        <img src="https://github.com/ecokater.png" width="100px;" alt="eco (ecokater)"/><br />
+        <sub><b>eco (ecokater)</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 *（アバターをクリックすると、パートナーの GitHub ホームページに直接アクセスできます）*
 
