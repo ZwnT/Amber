@@ -1,0 +1,39 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.next/
+out/
+build/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+venv_new/
+.venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+*.db
+*.log
+amber_core.spec
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Electron
+dist/
+release/
+
+# API Keys & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

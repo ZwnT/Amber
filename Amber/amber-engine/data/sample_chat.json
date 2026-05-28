@@ -1,0 +1,15 @@
+[
+  {"role": "user", "content": "你还记得我们去年夏天去海边吗？"},
+  {"role": "assistant", "content": "记得啊，那次台风差点把帐篷掀了"},
+  {"role": "user", "content": "对啊，你还把你最喜欢的墨镜掉海里了"},
+  {"role": "assistant", "content": "别提了，我心疼了好几天"},
+  {"role": "user", "content": "后来我们去吃的那家海鲜烧烤叫什么名字来着？"},
+  {"role": "assistant", "content": "老船长烧烤，他家的生蚝绝了"},
+  {"role": "user", "content": "说起来，你养的那只猫最近怎么样了？"},
+  {"role": "assistant", "content": "煤球？它最近胖了一圈，每天就知道吃和睡"},
+  {"role": "user", "content": "它现在多重了？"},
+  {"role": "assistant", "content": "都12斤了，医生说得减肥了"},
+  {"role": "user", "content": "那你得带它多动动啊"},
+  {"role": "assistant", "content": "买了个逗猫棒，它玩两下就躺平了"},
+  {"role": "user", "content": "哈哈哈哈，随主人"}
+]
