@@ -461,20 +461,21 @@ async def handle_chat_internal(persona_id: str, req: ChatRequest, db: Session, i
         sys.stdout.flush()
         ai_raw = response.choices[0].message.content.strip()
         
-        # 处理标签与过滤 (物理加固：兼容带括号与不带括号的情况)
-        match = re.search(r'\[?MOOD:\s*(\{.*?\})\]?', ai_raw, re.DOTALL)
-        if match:
+        # --- 认知引擎：情绪标签物理剥离与校准 ---
+        # 采用最强力匹配：寻找任何包含情绪关键字的 JSON 结构，无论其是否有 MOOD: 前缀或方括号包裹
+        mood_match = re.search(r'(\{.*?"(?:happiness|anger|anxiety)".*?\})', ai_raw, re.DOTALL)
+        
+        if mood_match:
             try:
-                mood_data = json.loads(match.group(1).strip())
+                mood_json_str = mood_match.group(1).strip()
+                mood_data = json.loads(mood_json_str)
                 
                 # --- 情绪动态阻尼系统 (Emotion Damping) ---
-                # 1. 长度衰减：输入太短（如“嗨”），情绪波动权重降至 20%
                 msg_len = len(req.content.strip())
                 damping = 1.0
                 if msg_len <= 2: damping = 0.2
                 elif msg_len <= 5: damping = 0.5
                 
-                # 2. 物理限压：单次对话单项情绪波动绝对值不得超过 5
                 h_delta = max(-5, min(5, mood_data.get("happiness", 0))) * damping
                 a_delta = max(-5, min(5, mood_data.get("anger", 0))) * damping
                 x_delta = max(-5, min(5, mood_data.get("anxiety", 0))) * damping
@@ -484,13 +485,23 @@ async def handle_chat_internal(persona_id: str, req: ChatRequest, db: Session, i
                 persona.anxiety = max(0, min(100, persona.anxiety + x_delta))
                 
                 print(f"【认知引擎】情绪波动校准: ΔH:{h_delta:.1f} ΔA:{a_delta:.1f} ΔX:{x_delta:.1f} (阻尼: {damping})")
-            except Exception as e:
-                print(f"【认知引擎】情绪标签解析失败: {e}")
                 
-            ai_content = re.sub(r'\s*\[?MOOD:.*?\]?\s*', '', ai_raw, flags=re.DOTALL).strip()
+                # 物理清除：首先尝试移除带标识的完整块，如果失败则直接移除 JSON 块
+                # 兼容 [MOOD: {..}], MOOD: {..}, {..}] 等所有变体
+                ai_content = re.sub(r'\[?MOOD:\s*' + re.escape(mood_json_str) + r'\]?', '', ai_raw).strip()
+                if mood_json_str in ai_content:
+                    ai_content = ai_content.replace(mood_json_str, "").strip()
+            except Exception as e:
+                print(f"【认知引擎】解析异常: {e}")
+                ai_content = ai_raw
         else:
             ai_content = ai_raw
+
+        # 兜底清理：移除末尾可能残留的空方括号或标识残留
+        ai_content = re.sub(r'\[?MOOD:\s*\]?', '', ai_content).strip()
+        ai_content = re.sub(r'\]$', '', ai_content).strip()
         
+        # 通用括号内容清理 (用于移除分身的内心独白或系统提示)
         ai_content = re.sub(r'\(.*?\)|（.*?）|\[.*?\]|【.*?】', '', ai_content, flags=re.DOTALL).strip()
         ai_content = ai_content.replace("|||", "\n").strip()
     except Exception as e:
