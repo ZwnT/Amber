@@ -461,8 +461,8 @@ async def handle_chat_internal(persona_id: str, req: ChatRequest, db: Session, i
         sys.stdout.flush()
         ai_raw = response.choices[0].message.content.strip()
         
-        # 处理标签与过滤
-        match = re.search(r'\[MOOD:\s*(.*?)\s*\]', ai_raw, re.DOTALL)
+        # 处理标签与过滤 (物理加固：兼容带括号与不带括号的情况)
+        match = re.search(r'\[?MOOD:\s*(\{.*?\})\]?', ai_raw, re.DOTALL)
         if match:
             try:
                 mood_data = json.loads(match.group(1).strip())
@@ -487,7 +487,7 @@ async def handle_chat_internal(persona_id: str, req: ChatRequest, db: Session, i
             except Exception as e:
                 print(f"【认知引擎】情绪标签解析失败: {e}")
                 
-            ai_content = re.sub(r'\s*\[MOOD:.*?\]\s*', '', ai_raw, flags=re.DOTALL).strip()
+            ai_content = re.sub(r'\s*\[?MOOD:.*?\]?\s*', '', ai_raw, flags=re.DOTALL).strip()
         else:
             ai_content = ai_raw
         
