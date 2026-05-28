@@ -9,7 +9,8 @@
 <p align="center">
   <a href="Readme/ReadmeChinese.md">简体中文</a> | 
   <a href="Readme/ReadmeEnglish.md">English</a> | 
-  <a href="Readme/ReadmeJapanese.md">日本語</a> | 
+  <a href="Readme/ReadmeJapanese.md">日本語</a>
+  <br>
   <a href="Readme/QUICK_START.md">快速开始 (Quick Start)</a> | 
   <a href="Readme/BACKEND_GUIDE.md">后端指南 (Backend)</a> | 
   <a href="Readme/FRONTEND_GUIDE.md">前端指南 (Frontend)</a> | 
@@ -123,14 +124,15 @@ npm run dev
 《琥珀》的诞生离不开开源社区的养分与无数深夜的灵感碰撞，在此对以下项目及伙伴致以最深切的谢意：
 
 ### 💡 灵感启迪
+
 - **https://github.com/notdog1998/yourself-skill** - 本项目的可视化实现基础，感谢为其注入的最初火花。
 - **https://github.com/LC044/WeChatMsg** - 感谢其震撼心灵的前言与教科书级的开源文档排版启迪。
 
 ### ⚙️ 核心筑路人
-<a href="https://github.com/GANLI312"><img src="https://github.com/GANLI312.png" width="50px" style="border-radius:50%;" title="GANLI312"/></a> &nbsp;&nbsp;
-<a href="https://github.com/ecokater"><img src="https://github.com/ecokater.png" width="50px" style="border-radius:50%;" title="eco (ecokater)"/></a>
 
-*（点击头像可直达伙伴的 GitHub 主页）*
+`<a href="https://github.com/GANLI312"><img src="https://github.com/GANLI312.png" width="50px" style="border-radius:50%;" title="GANLI312"/>``</a>` &nbsp;&nbsp;
+`<a href="https://github.com/ecokater"><img src="https://github.com/ecokater.png" width="50px" style="border-radius:50%;" title="eco (ecokater)"/>``</a>`
+
 
 > "如果你也想为《琥珀》注入新的灵魂，让陪伴永存，欢迎提交 Pull Request 或 Issue！"
 

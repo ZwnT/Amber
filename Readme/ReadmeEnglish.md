@@ -9,7 +9,8 @@
 <p align="center">
   <a href="ReadmeChinese.md">简体中文</a> | 
   <a href="ReadmeEnglish.md">English</a> | 
-  <a href="ReadmeJapanese.md">日本語</a> | 
+  <a href="ReadmeJapanese.md">日本語</a>
+  <br>
   <a href="QUICK_START.md">快速开始 (Quick Start)</a> | 
   <a href="BACKEND_GUIDE.md">后端指南 (Backend)</a> | 
   <a href="FRONTEND_GUIDE.md">前端指南 (Frontend)</a> | 
