@@ -73,7 +73,14 @@ export default function AmberApp() {
 
   return (
     <div className="h-screen w-screen flex flex-col overflow-hidden bg-background select-none">
-      <WindowControls />
+      <div
+        className="h-8 w-full flex items-center justify-end bg-sidebar shrink-0"
+        style={{ WebkitAppRegion: "drag" } as React.CSSProperties}
+      >
+        <div style={{ WebkitAppRegion: "no-drag" } as React.CSSProperties}>
+          <WindowControls />
+        </div>
+      </div>
 
       <div className="flex-1 flex overflow-hidden relative">
         <IconSidebar
@@ -105,7 +112,7 @@ export default function AmberApp() {
                 onOpenProfile={() => setViewMode("profile")}
                 t={t}
               />
-            ) : (
+            ) : selectedPersona ? (
               <IdentityDetail
                 persona={selectedPersona}
                 onBack={() => setViewMode("chat")}
@@ -113,7 +120,7 @@ export default function AmberApp() {
                 onUpdate={fetchAll}
                 language={language}
               />
-            )}
+            ) : null}
           </>
         ) : activeTab === "monitor" ? (
           <DataMonitor activePersonaId={selectedPersonaId} language={language} />
@@ -126,7 +133,7 @@ export default function AmberApp() {
             setLanguage={setLanguage}
           />
         ) : (
-          <PlaceholderView />
+          <PlaceholderView type="add" />
         )}
       </div>
 

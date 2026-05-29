@@ -4,7 +4,7 @@ pydantic
 sqlalchemy
 openai
 aiohttp
-botpy
+qq-botpy
 python-dotenv
 websockets
 httpx

@@ -2,8 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { BatteryCharging, Trash2, Pin, Database, HelpCircle } from 'lucide-react';
-import { API_BASE_URL } from '@/lib/api-config'; // wait, in previous steps I had to remove this from DataMonitor.tsx and declare locally.
-
 const LOCAL_API_BASE_URL = 'http://localhost:8000';
 
 interface MemoryCorpus {

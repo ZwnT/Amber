@@ -2,34 +2,9 @@
 
 import { Search } from "lucide-react"
 import { cn } from "@/lib/utils"
+import type { Persona } from "@/types"
 
-export interface Persona {
-  id: string
-  name: string
-  avatar: string
-  avatarData?: string // 用于存储 base64 图片数据
-  lastMessage: string
-  emotionStatus: "amber" | "gray" | "red"
-  tag: string
-  gender?: string
-  relationship?: string
-  impression?: string
-  token?: string // 绑定的平台 Token
-  coreMemory?: string
-  traits?: string[]
-  catchphrases?: string[]
-  stability?: number
-  synchronization?: number
-  happiness?: number
-  anger?: number
-  anxiety?: number
-  is_override_active?: boolean
-  override_interval?: number
-  last_interaction_time?: string
-  bot_app_id?: string
-  bot_app_secret?: string
-  bot_token?: string
-}
+export type { Persona }
 
 interface PersonaRosterProps {
   personas: Persona[]
@@ -98,7 +73,7 @@ export function PersonaRoster({
               <span
                 className={cn(
                   "absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full border-2 border-card",
-                  emotionColors[persona.emotionStatus]
+                  emotionColors[persona.emotionStatus ?? "gray"]
                 )}
               />
             </div>

@@ -24,9 +24,10 @@ export interface Persona {
   last_relay_context?: string
   // UI-only fields
   lastMessage?: string
-  emotionStatus?: "green" | "yellow" | "red"
+  emotionStatus?: "amber" | "gray" | "red"
   tag?: string
   relationship?: string
+  coreMemory?: string
 }
 
 export interface Message {

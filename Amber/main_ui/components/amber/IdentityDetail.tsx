@@ -162,7 +162,7 @@ export function IdentityDetail({ persona, onBack, onDelete, onUpdate, language =
               <div className="relative w-32 h-32 rounded-full bg-amber-subtle flex items-center justify-center text-5xl border-4 border-background shadow-2xl overflow-hidden z-10">
                 {!isEditing ? (
                   (persona.avatarData || (persona.avatar && persona.avatar.startsWith('data:image'))) ? (
-                    <img src={persona.avatarData || persona.avatar} alt={persona.name} className="w-full h-full object-cover" />
+                    <img src={persona.avatarData || (persona.avatar ?? undefined)} alt={persona.name} className="w-full h-full object-cover" />
                   ) : (
                     persona.avatar
                   )

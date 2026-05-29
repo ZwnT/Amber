@@ -10,7 +10,7 @@ function mapPersona(p: Persona): Persona {
     avatar: p.avatar ? "" : "✨",
     avatarData: p.avatar ?? undefined,
     lastMessage: "就绪...",
-    emotionStatus: "green",
+    emotionStatus: "amber" as const,
     tag: p.relationship_desc || "分身",
     gender: p.gender === "male" ? "男" : p.gender === "female" ? "女" : "非线性",
     relationship: p.relationship_desc,
