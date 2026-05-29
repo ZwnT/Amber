@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
-  output: 'export',
-  assetPrefix: './',
-  trailingSlash: true,
+  ...(isProd && { output: 'export', assetPrefix: './', trailingSlash: true }),
   typescript: {
     ignoreBuildErrors: true,
   },

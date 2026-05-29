@@ -19,7 +19,7 @@ function startBackend() {
     });
   } else {
     // 开发环境下启动 Python 后端
-    const pythonPath = 'python'; 
+    const pythonPath = 'python';
     const scriptPath = path.join(__dirname, '..', 'amber-engine', 'main.py');
     pythonProcess = spawn(pythonPath, [scriptPath], {
       shell: true,
@@ -38,7 +38,7 @@ function createWindow() {
     width: 1200,
     height: 800,
     frame: false, // 开启无边框模式，彻底去掉原生标题栏
-    transparent: false, 
+    transparent: false,
     backgroundColor: '#ffffff',
     webPreferences: {
       nodeIntegration: false, // 提高安全性，关闭直接 node 注入
@@ -76,8 +76,8 @@ app.whenReady().then(() => {
   startBackend();
   createWindow();
 });
-  
-  // 生命周期彻底死锁：关闭窗口时刚性杀死 Python 后端进程
+
+// 生命周期彻底死锁：关闭窗口时刚性杀死 Python 后端进程
 function killBackend() {
   if (pythonProcess) {
     console.log('[Electron] Killing backend process...');
