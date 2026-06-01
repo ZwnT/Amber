@@ -170,6 +170,12 @@ The birth of "Amber" is inseparable from the nourishment of the open-source comm
 
 ---
 
+## 📄 License
+
+This project is licensed under the [Apache License 2.0](LICENSE).
+
+---
+
 ## 📬 Feedback & Suggestions
 
 If you have any suggestions, ideas, or encounter bugs for "Amber", feel free to contact us:
