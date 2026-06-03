@@ -77,18 +77,31 @@ The project addresses anthropomorphic experiences across three core dimensions:
 - **📡 External Survival (External Relay Entity)**: Completely breaks browser sandbox limits. Physically powers Tencent QQ bots for 100% pixel-level synchronization between web console and mobile QQ.
 - **🔔 Active Override (Active Proactive Check-in)**: Introduces a neglect time-lapse fermentation algorithm. When enabled, shakes a 3% random fate dice every 60 seconds to trigger proactive check-ins on the host's mobile QQ.
 
-## 🍉 Core Roadmap
+## 🎯 Roadmap & Future Updates
 
-- ✅ Instant emotion three-axis (Anger/Humor/Empathy) state machine control
-- ✅ Cerebral cortex RAG memory chain (SQLite optimization + 1000-word truncation)
-- ✅ Janitor background 60s emotional annealing daemon
-- ✅ Midnight dream memory crystallization (AI automatic dehydration and summary)
-- ✅ Tencent QQ bot relay connection (100% sync between mobile and web)
-- ✅ i18n support: Multi-language (CN/EN/JP) physical switching
-- ✅ Local config: One-click active proactive check-in (check-in and reverse care)
-- ✅ Local config: Neglect fermentation interval selection (1min/3h/12h)
-- ⏳ Telegram / Discord multi-protocol survival expansion (WIP)
-- ⏳ Canvas visualization of cerebral cortex memory nodes (Planned)
+The launch of Amber is just the beginning. To give digital life deeper cognitive dimensions while defending the bottom line of 100% data privacy, the technical evolution of the project is divided into three core stages:
+
+### 📍 Stage 1: Local Client Foundation Lockdown (Short-term)
+*   **🔒 Dynamic Moderation Guard**:
+    Introduce a lightweight local sensitive word filtering and compliance audit matrix (100% offline). Implement bidirectional physical interception for both user input and AI output to strengthen local security.
+*   **🧠 Auto-Crystallization v2**:
+    Reconstruct the unconscious metabolic algorithm of the `Janitor` daemon to further optimize SQLite physical indexing efficiency. Improve LLM denoising and feature extraction density, making [Dream Memory Crystallization] more precise in retrieving multi-level clues.
+*   **🎙️ Pure Local TTS**:
+    Under the premise of insisting on 100% local operation, explore lightweight on-device Text-to-Speech (TTS) to give personas a unique voice, completing the companion loop at the auditory level.
+
+### 📍 Stage 2: Core Decoupling & Pure Local Cross-Platform (Medium-term)
+*   **📟 Amber Core CLI**:
+    Completely decouple the underlying cognitive skeleton, such as System 1 (Emotional State Machine) and System 2 (SQLite Memory Chain), from the UI layer. Encapsulate it as a UI-less lightweight command-line tool (Amber-CLI) for geeks requiring microsecond response times.
+*   **📱 Pure Local Clients**:
+    Build cross-platform (Android / iOS / macOS) local shells based on Rust / Flutter. Adhering to the **data never uploads to the cloud** principle, users will need to manually import chat records (e.g., from WeChat/QQ) to the local disk of the corresponding device, where the local database will perform distillation, indexing, and invocation.
+
+### 📍 Stage 3: Decentralized LAN Multi-Device Sync (Long-term)
+*   **🌐 Local Mesh P2P Sync**:
+    Refuse to use any third-party commercial cloud servers. Plan to introduce Peer-to-Peer (P2P) communication technology based on local network broadcasting (mDNS/UDP) or WebRTC DataChannel. When devices are powered on in the same Wi-Fi LAN, they will automatically trigger an encrypted P2P handshake to achieve seamless millisecond-level synchronization of SQLite memory databases between PCs and mobile phones.
+*   **☁️ WebDAV Support**:
+    Reserve a standard WebDAV decentralized synchronization interface. Support advanced geek users in mounting self-built Synology NAS, private cloud disks (e.g., Nutstore, Nextcloud). The software will spontaneously write back the local cold storage to the user's own cloud disk through an encrypted pipeline upon startup and shutdown, giving the user 100% sovereignty over data pipelines and servers.
+
+---
 
 ## 🚀 Quick Start
 
@@ -143,7 +156,7 @@ The birth of "Amber" is inseparable from the nourishment of the open-source comm
 
 ### 💡 Inspirations
 - **https://github.com/notdog1998/yourself-skill** - The basis for the visualization implementation of this project. Thank you for the initial spark.
-- **https://github.com/LC044/WeChatMsg** - Thanks for the heart-shaking foreword and the textbook-level open-source documentation layout inspiration.
+- **https://github.com/openclaw/openclaw** - Thanks to OpenClaw for providing key inspiration for the Bot integration in this project.
 
 ### ⚙️ Core Contributors
 
@@ -170,9 +183,25 @@ The birth of "Amber" is inseparable from the nourishment of the open-source comm
 
 ---
 
-## 📄 License
+## ⚖️ License & Statement
 
-This project is licensed under the [Apache License 2.0](LICENSE).
+The original intention of creating "Amber" was to hope that users, after completing local configurations, could have a digital life system with a true sense of instant messaging immersion, allowing users to feel the "human" warmth between the lines, rather than facing a cold and clumsy AI robot—let alone wanting it to become a commercial tool for making money by exploiting others' emotions after "distillation."
+
+While commercialization and cloud-hosting are excellent technical choices, and multi-device synchronization can completely break free from the physical limitations of external Bot protocols, as an independent developer, I know that I do not have a large compliance development and legal team. Facing the current legal disputes over **personal portrait rights and privacy rights** in "data distillation," as well as the huge compliance red line for user sensitive data preservation in cloud-hosting, the most important thing is—**my original intention in founding this project was to allow more people to obtain companionship feelings greater than memories through open-source, low-cost, and absolutely secure ways.**
+
+Based on the above technical ethics and security bottom line, I feel that I cannot and will not provide any paid services through closed-source.
+
+---
+
+### 🛡️ Rigid Additional License Terms
+
+This project is officially open-sourced under the **Apache License 2.0**. We fully welcome and respect the legitimate evolution of technology under open-source licenses, but based on sovereignty deadlock, the following **rigid prohibited terms** are hereby added:
+
+1. **🚫 Prohibit Trademark and Brand Parasitism**: Anyone is allowed to modify or close-source commercialize the code of this project according to law, but it is **strictly prohibited to use the name of this project (including but not limited to "Amber", "琥珀" and its similar styles and homophonic names) in any commercial derivative version**.
+2. **🚫 Prohibit Icon Asset Theft**: Commercial derivative versions are **strictly prohibited from using, including, or modifying the official UI icons (Logo assets) of this project**.
+3. **⚠️ Compulsory Retention of Copyright Imprint**: When anyone distributes or modifies the code, they **must completely retain the original author's copyright notice (Copyright 2025 ZwnT) and original open-source notice in the header of all core files**.
+
+> "Amber belongs to every pure soul who wants to fight against oblivion. It can only be used to carry love and is never allowed to be packaged as a cold commodity."
 
 ---
 
