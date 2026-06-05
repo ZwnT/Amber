@@ -41,9 +41,17 @@
 ## 🖼️ プロジェクトのスクリーンショット (Screenshots)
 
 <p align="center">
+  <img src="image/chatmain.png" alt="チャット画面" width="800px" />
+  <img src="image/test_ProfileView1.png" alt="プロファイル表示 1" width="800px" />
+  <img src="image/test_ProfileView2.png" alt="プロファイル表示 2" width="800px" />
+  <br>
+  <em>[図 1] コアインタラクションとペルソナプロファイルプレビュー：「Aero」テストペルソナの実装</em>
+</p>
+
+<p align="center">
   <img src="image/main_ui.png" alt="琥珀メイン UI" width="800px" />
   <br>
-  <em>[図 1] 琥珀 (Amber) コアインタラクションインターフェース：デジタル生命のためのミニマリストキャリア</em>
+  <em>[図 2] 琥珀 (Amber) コアインタラクションインターフェース：デジタル生命のためのミニマリストキャリア</em>
 </p>
 
 <p align="center">

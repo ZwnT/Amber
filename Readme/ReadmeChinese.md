@@ -41,9 +41,17 @@
 ## 🖼️ 项目界面 (Screenshots)
 
 <p align="center">
+  <img src="image/chatmain.png" alt="聊天界面" width="800px" />
+  <img src="image/test_ProfileView1.png" alt="人格预览1" width="800px" />
+  <img src="image/test_ProfileView2.png" alt="人格预览2" width="800px" />
+  <br>
+  <em>[图 1] 核心交互与人格档案预览：实装“艾尔 (Aero)”测试人格</em>
+</p>
+
+<p align="center">
   <img src="image/main_ui.png" alt="琥珀主界面" width="800px" />
   <br>
-  <em>[图 1] 琥珀 (Amber) 核心交互界面：极简主义的数字生命承载体</em>
+  <em>[图 2] 琥珀 (Amber) 核心内容：极简主义的数字生命承载体</em>
 </p>
 
 <p align="center">
