@@ -41,9 +41,17 @@ The project addresses anthropomorphic experiences across three core dimensions:
 ## 🖼️ Project Screenshots
 
 <p align="center">
+  <img src="image/chatmain.png" alt="Chat Interface" width="800px" />
+  <img src="image/test_ProfileView1.png" alt="Profile View 1" width="800px" />
+  <img src="image/test_ProfileView2.png" alt="Profile View 2" width="800px" />
+  <br>
+  <em>[Fig 1] Core Interaction and Persona Profile Preview: Featuring "Aero" Test Persona</em>
+</p>
+
+<p align="center">
   <img src="image/main_ui.png" alt="Amber Main UI" width="800px" />
   <br>
-  <em>[Fig 1] Amber Core Interaction Interface: A minimalist carrier for digital life</em>
+  <em>[Fig 2] Amber Core Interaction Interface: A minimalist carrier for digital life</em>
 </p>
 
 <p align="center">
