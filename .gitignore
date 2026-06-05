@@ -37,3 +37,6 @@ release/
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Local Rules
+AI_RULES.md
